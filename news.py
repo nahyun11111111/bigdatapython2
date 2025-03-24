@@ -16,5 +16,3 @@ news_list = soup.find_all('li', class_='list_item')
 for idx, news in enumerate(news_list[:20], start=1):  # 상위 20개 기사
     title = news.find('a').get_text(strip=True)  # 기사 제목 추출
     print(f"{idx}. {title}")
-
-
