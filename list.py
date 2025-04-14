@@ -13,7 +13,7 @@ print("""넵!!!
 AI_song = random.choice(songs)
 print(f"두두두두ㅜ둥 저의 추천곡은 {AI_song}!!!")
 
-#리스트를 쓰는 이유python list.py
+#리스트를 쓰는 이유
 song1 = "a노래"
 song2 = "b노래"
 song3 = "c노래"
