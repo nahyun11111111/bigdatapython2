@@ -1,10 +1,8 @@
-# main.py
 import func
 
 # 데이터 가져오기
 songs = func.get_melon_chart()
 
-# 메뉴 출력
 print("===================")
 print("1. 멜론 100")
 print("2. 멜론 50")
