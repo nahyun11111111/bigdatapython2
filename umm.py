@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
@@ -7,3 +8,6 @@ driver.get('https://comic.naver.com/')
 
 input("크롬 창이 열렸으면 아무 키나 눌러서 종료하세요...")
 driver.quit()
+=======
+print("hello")
+>>>>>>> 51f9eb66092fe863bc25f0f34bba620c902ccddd
