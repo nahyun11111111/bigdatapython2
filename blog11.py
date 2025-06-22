@@ -1,17 +1,17 @@
-# 네이버 검색 API 예제 - 블로그 검색
+# 네이버 검색 API - 블로그 검색
 import os
 import sys
 import urllib.request
 import json
 
-client_id = ""
-client_secret = ""
+client_id = "7oq3k0Y3vFVKJRpftsIJ"
+client_secret = "fgUT2OsHuM"
 
 def nblog(search):
 
     encText = urllib.parse.quote(search)
-    url = "https://openapi.naver.com/v1/search/blog?query=" + encText # JSON 결과
-    # url = "https://openapi.naver.com/v1/search/blog.xml?query=" + encText # XML 결과
+    url = "https://openapi.naver.com/v1/search/blog?query=" + encText 
+    # url = "https://openapi.naver.com/v1/search/blog.xml?query=" + encText 
     request = urllib.request.Request(url)
     request.add_header("X-Naver-Client-Id",client_id)
     request.add_header("X-Naver-Client-Secret",client_secret)
@@ -47,8 +47,8 @@ def nblog(search):
 
 def nnews(search):
     encText = urllib.parse.quote(search)
-    url = "https://openapi.naver.com/v1/search/news?query=" + encText # JSON 결과
-    # url = "https://openapi.naver.com/v1/search/blog.xml?query=" + encText # XML 결과
+    url = "https://openapi.naver.com/v1/search/news?query=" + encText 
+    # url = "https://openapi.naver.com/v1/search/blog.xml?query=" + encText 
     request = urllib.request.Request(url)
     request.add_header("X-Naver-Client-Id",client_id)
     request.add_header("X-Naver-Client-Secret",client_secret)
